@@ -321,7 +321,7 @@ class CTAAudioController {
     tryUnlockAudioContext() {
         // Create a silent audio to try to unlock the context
         const silentAudio = new Audio();
-        silentAudio.src = 'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmcdBkWO1fPPfykDYzbE7t2XNUF4wt3o2K02eGWKtgAAP1iYvB9Jm+vdkJzD2K3Z4WqPLZGjwnFWrKYtF2KyWRVOt1kPTqNUW2Sto4CuWZTJb6PYpK6XTKd+cnmcnpKgGJn3kU7mYF3vlJuSUu8OAuVPT4wlFJOFE3oGfLlDC3KwEQR5l0d4izfGX9GI3SqMt0KXGXUVtgJA'';
+        silentAudio.src = 'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmcdBkWO1fPPfykDYzbE7t2XNUF4wt3o2K02eGWKtgAAP1iYvB9Jm+vdkJzD2K3Z4WqPLZGjwnFWrKYtF2KyWRVOt1kPTqNUW2Sto4CuWZTJb6PYpK6XTKd+cnmcnpKgGJn3kU7mYF3vlJuSUu8OAuVPT4wlFJOFE3oGfLlDC3KwEQR5l0d4izfGX9GI3SqMt0KXGXUVtgJA';
         silentAudio.volume = 0;
         silentAudio.play().then(() => {
             console.log('Audio context unlocked');
